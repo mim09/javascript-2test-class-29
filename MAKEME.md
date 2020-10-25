@@ -16,6 +16,13 @@ const myFunction = () => {
 
 myFunction();
 ```
+Answer:
+the output will be 
+Index: 4
+Index: 4
+Index: 4 
+Index: 4
+with 3 seconds interval because runs after the loop reaches i = 4
 
 ## Question 2:
 
@@ -29,6 +36,12 @@ Explain what and why would be logged on the console?
      return hoisted(); 
    }
    console.log(parent());
+
+   Answer :
+   erro message will bi displayed on the console 'hoisted is not a function' because we have already declared
+   hoisted as a variable and the variable hoisted is already hoisted before the return function.
+   so when we call the return function hoisted Javascript already declared the variable with that name.
+   
 ```
 
 ## Question 3:
@@ -74,4 +87,7 @@ function test() {
     console.log('six');
 }
 test();
+
+Answer:
+The function first dispplays 'one' 'six' 'four' because there is no delay interval for these three then after one second it displays 'four' and 'two' 'five' and 'three' because they all have the sme time delay(1 second). set interval API makes the function to run asynchronously.
 ```
